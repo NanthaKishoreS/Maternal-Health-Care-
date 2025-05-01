@@ -279,7 +279,7 @@ if __name__ == "__main__":
         print(result)
         
         # Display confidence level based on measurement quality
-        if hasattr(get_bpm, 'hr_buffer'):  # Check if hr_buffer exists
+        if hasattr(get_bpm, 'hr_buffer'): 
             hr_buffer = get_bpm.hr_buffer
             if len(hr_buffer) == BUFFER_SIZE and np.std(list(hr_buffer)) < 5:
                 print("Confidence: High")
