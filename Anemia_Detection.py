@@ -345,7 +345,7 @@ def visualize_analysis(original_nail, original_conjunctiva, nail_roi, conjunctiv
     canvas_w = w1 + w2 + 40
     canvas = np.ones((canvas_h, canvas_w, 3), dtype=np.uint8) * 255
     
-    # Add title
+   
     cv2.putText(canvas, "Anemia Screening Analysis", (20, 30), 
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
     
